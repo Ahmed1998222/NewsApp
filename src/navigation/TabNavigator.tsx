@@ -1,7 +1,10 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { HomeScreen,SettingsScreen  } from '../screens/dashboardModule/screens';
+import { DashboardStackScreens } from '../screens/dashboardModule';
+import { ConfigStackScreens } from '../screens/configModule';
+import { EDashboardModuleRoutes } from '../screens/dashboardModule/navigation/dashboardModuleRoutes.enum';
+import { EConfigModuleRoutes } from '../screens/configModule/navigation';
 
 const Tab = createBottomTabNavigator();
 const ICON_SIZE = 25;
@@ -15,8 +18,8 @@ const TabNavigator = () => {
      
        }}>
       <Tab.Screen
-        name="Home"
-        component={HomeScreen}
+        name={EDashboardModuleRoutes.Home}
+        component={DashboardStackScreens}
         options={{
           title: "News",
           tabBarIcon: ({ color, focused }) => (
@@ -29,8 +32,8 @@ const TabNavigator = () => {
         }}
       />
       <Tab.Screen
-        name="Settings"
-        component={SettingsScreen}
+        name={EConfigModuleRoutes.Settings}
+        component={ConfigStackScreens}
         options={{
           title:"settings",
           tabBarIcon: ({ color, focused }) => (
