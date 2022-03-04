@@ -4,7 +4,7 @@ import { SplashScreen, OnBoardingScreen } from './screens';
 import { splashModuleRoutes, EsplashModuleRoutes, } from './navigation';
 
 export const SplashStack = createStackNavigator<splashModuleRoutes>();
-export const DashboardStackScreens = () => (
+export const SplashStackScreens = () => (
   <SplashStack.Navigator initialRouteName={EsplashModuleRoutes.Splash}
     screenOptions={{
       headerShown: false,
