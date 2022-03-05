@@ -5,7 +5,7 @@ import styles from './style';
 const SettingsScreen = () => {
     return(
         <View>
-            <Text>Hello</Text>
+            <Text>Hello in config</Text>
         </View>
     )
 };

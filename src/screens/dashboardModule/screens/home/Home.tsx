@@ -8,7 +8,7 @@ const HomeScreen = ({navigation}) => {
 
         <View>
             <TouchableOpacity onPress={()=>navigation.navigate(EDashboardModuleRoutes.DetailsNews)}>
-                <Text>Hello</Text>
+                <Text>Hello in Home</Text>
             </TouchableOpacity>
         </View>
     )

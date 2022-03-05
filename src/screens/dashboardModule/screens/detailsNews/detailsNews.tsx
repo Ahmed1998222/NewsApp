@@ -6,7 +6,7 @@ const DetailsNewsScreen = () => {
     return (
 
         <View>
-            <Text>Hellsfdsfsfo</Text>
+            <Text>Hello in details</Text>
         </View>
     )}
     export default DetailsNewsScreen;
