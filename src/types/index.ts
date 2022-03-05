@@ -1,5 +1,5 @@
  
-export interface INew {
+export interface INews {
   source: {
     id: string;
     name: string;

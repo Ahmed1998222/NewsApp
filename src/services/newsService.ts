@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { ENetworkApp} from '../utils/EApp';
-import { INew } from '../types';
+import {  INews } from '../types';
 
 export const newsService = createApi({
   reducerPath: 'newsService',
@@ -12,7 +12,7 @@ export const newsService = createApi({
     },
   }),
   endpoints: builder => ({
-    getNews: builder.mutation<{ articles: INew[] }, string>({
+    getNews: builder.mutation<{ articles: INews[] }, string>({
       query: searchKey => ({
         url: `top-headlines?${
           searchKey ? `q=${searchKey}&` : ''
