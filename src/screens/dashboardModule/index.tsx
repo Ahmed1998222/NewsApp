@@ -1,22 +1,22 @@
 import React from 'react';
 import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack';
 import { DetailsNewsScreen, HomeScreen } from './screens';
-import { DashboardModuleRoutes, EdashboardModuleRoutes, } from './navigation';
+import { DashboardModuleRoutes, EDashboardModuleRoutes } from './navigation';
 import TabNavigator from '../../navigation/TabNavigator';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 export const DashboardStack = createStackNavigator<DashboardModuleRoutes>();
 export const DashboardStackScreens = () => (
-  <DashboardStack.Navigator initialRouteName={EdashboardModuleRoutes.Home}
+  <DashboardStack.Navigator initialRouteName={EDashboardModuleRoutes.Home}
     screenOptions={{
       headerShown: false,
       cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
     }}
   >
-    <DashboardStack.Screen name={EdashboardModuleRoutes.Home} component={HomeScreen} />
+    <DashboardStack.Screen name={EDashboardModuleRoutes.Home} component={HomeScreen} />
 
 
-    <DashboardStack.Screen name={EdashboardModuleRoutes.DetailsNews} component={DetailsNewsScreen} />
+    <DashboardStack.Screen name={EDashboardModuleRoutes.DetailsNews} component={DetailsNewsScreen} />
 
 
 
