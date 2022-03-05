@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { DashboardStackScreens } from '../screens/dashboardModule';
 import { ConfigStackScreens } from '../screens/configModule';
-import { EDashboardModuleRoutes } from '../screens/dashboardModule/navigation/dashboardModuleRoutes.enum';
+import { EDashboardModuleRoutes } from '../screens/dashboardModule/navigation/';
 import { EConfigModuleRoutes } from '../screens/configModule/navigation';
 
 const Tab = createBottomTabNavigator();
