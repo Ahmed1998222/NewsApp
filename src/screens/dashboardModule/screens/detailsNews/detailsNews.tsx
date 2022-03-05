@@ -1,7 +1,12 @@
 import React from 'react';
-import {  StyleSheet } from 'react-native';
 import styles from './style';
+import { StyleSheet, View, Text } from 'react-native';
 
 const DetailsNewsScreen = () => {
-};
-export default DetailsNewsScreen;
+    return (
+
+        <View>
+            <Text>Hellsfdsfsfo</Text>
+        </View>
+    )}
+    export default DetailsNewsScreen;
