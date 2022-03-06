@@ -2,7 +2,7 @@ import theme from '../../../assets/theme/theme';
 import { scaleHeight } from '../../../utils/scaling';
 import * as React from 'react';
 import { StyleSheet, TextProps, StyleProp } from 'react-native';
-import { CustomText } from '../CustomText/CustomText';
+import { CustomText } from '../customText/CustomText';
 
 interface AppTextProps extends TextProps {
   children: any;

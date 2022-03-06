@@ -6,13 +6,14 @@ import { selectIsDark } from '../../../store/slices/themSlice';
 import { useSelector } from 'react-redux';
 import { scaleHeight, scaleWidth } from '../../../utils/scaling';
 import { INews } from '../../../types';
+import { EDashboardModuleRoutes } from '../navigation';
 
 const isDark = useSelector(selectIsDark);
 
 const NewsCard = ({ item, navigate } : INewsCard) => {
   return (
     <TouchableOpacity
-      onPress={() => navigate('NewDetails', { new: item })}
+      onPress={() => navigate(EDashboardModuleRoutes.DetailsNews, { new: item })}
       style={[Styles.newCardCont, isDark && Styles.darkNewCard]}>
       <Image source={{ uri: item.urlToImage }} style={Styles.newImg} />
       <View style={Styles.newTxtCont}>
