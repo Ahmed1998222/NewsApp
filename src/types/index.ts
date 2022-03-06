@@ -12,3 +12,11 @@ export interface INews {
   publishedAt: string;
   content: string;
 }
+
+
+export interface IOption {
+  id?: string | number;
+  title: string;
+  value: any;
+}
+
