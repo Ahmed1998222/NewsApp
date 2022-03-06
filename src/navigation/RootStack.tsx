@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import TabNavigator from './TabNavigator';
 import SplashNavigator from './SplashStack';
@@ -8,7 +8,16 @@ export const RootStack = createStackNavigator<RootRoutes>();
 
 export const RootStackScreen = ({ userToken }: IRootStack) => {
 
-  return <>{true ? <TabNavigator /> : <SplashNavigator />}</>;
+  const [isSplashOn, setIsSplashOn] = useState(true)
+  useEffect(() => {
+
+
+    setTimeout(() => {
+
+      setIsSplashOn(false)
+    }, 5000)
+  }, [])
+  return <>{isSplashOn ? <SplashNavigator /> : <TabNavigator />}</>;
 };
 
 export enum ERootRoutes {

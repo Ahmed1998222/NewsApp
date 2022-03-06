@@ -1,3 +1,5 @@
 export const sharedImages = {
-    connection :require('../internet-connection')
+    connection :require('./internet-connection.png'),
+    Splash :require('./Splash.png')
+
 }
