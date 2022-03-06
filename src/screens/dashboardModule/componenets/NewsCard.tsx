@@ -8,9 +8,10 @@ import { scaleHeight, scaleWidth } from '../../../utils/scaling';
 import { INews } from '../../../types';
 import { EDashboardModuleRoutes } from '../navigation';
 
-const isDark = useSelector(selectIsDark);
+const NewsCard = ({ item, navigate }: INewsCard) => {
 
-const NewsCard = ({ item, navigate } : INewsCard) => {
+  const isDark = useSelector(selectIsDark);
+
   return (
     <TouchableOpacity
       onPress={() => navigate(EDashboardModuleRoutes.DetailsNews, { new: item })}
@@ -66,6 +67,6 @@ const Styles = StyleSheet.create({
 
 interface INewsCard {
   navigate: any;
-  item:INews;
-  
+  item: INews;
+
 }
