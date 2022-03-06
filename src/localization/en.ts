@@ -9,6 +9,10 @@ const en = {
     light: 'Light',
     dark: 'Dark',
   },
+  home: 'Home',
+  news: 'News',
+  search: 'Search',
+  settings: 'Settings',
 };
 
 export default en;

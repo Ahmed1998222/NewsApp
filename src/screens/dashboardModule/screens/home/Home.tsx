@@ -15,6 +15,7 @@ import { StackNavigationProp } from '@react-navigation/stack';
 import { DashboardModuleRoutes, EDashboardModuleRoutes } from '../../navigation';
 import NewsCard from '../../componenets/NewsCard'
 import EmptySearch from '../../componenets/EmptySearch';
+import { strings } from '../../../../localization';
 type ScreenProp = StackNavigationProp<DashboardModuleRoutes, EDashboardModuleRoutes.Home>;
 export const HomeScreen = () => {
 
@@ -59,7 +60,7 @@ export const HomeScreen = () => {
         <TextInput
           value={query}
           onChangeText={onChangeText}
-          placeholder={'search'}
+          placeholder={strings('search')}
           style={style.searchInput}
           autoCorrect={false}
         />

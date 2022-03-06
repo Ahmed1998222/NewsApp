@@ -18,6 +18,7 @@ const TabNavigator = () => {
     <Tab.Navigator
       screenOptions={{
         headerShown: false,
+        tabBarShowLabel:false,
         tabBarStyle: {
           backgroundColor: isDark
             ? theme.colors.bottomBarBackgrounds.dark
@@ -31,7 +32,6 @@ const TabNavigator = () => {
         name={EDashboardModuleRoutes.Home}
         component={DashboardStackScreens}
         options={{
-          title: "News",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
               name={focused ? 'home' : 'home-outline'}
@@ -45,7 +45,6 @@ const TabNavigator = () => {
         name={EConfigModuleRoutes.Settings}
         component={ConfigStackScreens}
         options={{
-          title: "settings",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
               name={focused ? 'settings' : 'settings-outline'}

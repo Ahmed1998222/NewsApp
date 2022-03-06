@@ -9,6 +9,10 @@ const ar = {
     light: 'مضئ',
     dark: 'ليلي',
   },
+  home: 'الرئيسية',
+  news: 'الاخبار',
+  search: 'ابحث',
+  settings: 'الاعدادات',
 };
 
 export default ar;
