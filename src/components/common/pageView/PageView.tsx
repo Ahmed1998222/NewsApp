@@ -22,7 +22,7 @@ interface Props {
   statusBarBG?: ColorSchemeName;
 }
 
-export const PageView = ({ style, scrollEnabled, children }) => {
+export const PageView : FC<Props> = ({ style, scrollEnabled, children }) => {
   const isDark = useSelector(selectIsDark);
 
   return (
