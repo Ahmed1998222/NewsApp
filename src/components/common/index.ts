@@ -1,3 +1,4 @@
 export * from './pageView/PageView';
 export * from './customText/CustomText';
-export * from './ErrorText/ErrorText';
+export * from './errorText/ErrorText';
+export * from './skelton/Skelton';

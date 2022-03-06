@@ -1,2 +1,2 @@
-export {default as HomeScreen} from './home/Home';
-export {default as DetailsNewsScreen} from './detailsNews/detailsNews';
+export { HomeScreen} from './home/Home';
+export {DetailsNewsScreen} from './detailsNews/detailsNews';
