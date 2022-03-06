@@ -1,10 +1,13 @@
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 import themReducer from './slices/themSlice';
+import { newsService } from '../services/newsService';
 
 export const store = configureStore({
   reducer: {
-    theme: themReducer
+    theme: themReducer,
+    [newsService.reducerPath]: newsService.reducer,
+
   }, 
 });
 

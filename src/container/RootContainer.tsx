@@ -1,6 +1,10 @@
 import React from 'react';
-import {NavigateContainer} from '.';
+import { NavigateContainer } from '.';
+import { ReduxContainer } from '.';
 
 export const RootContainer = () => (
-      <NavigateContainer />
+      <ReduxContainer>
+            <NavigateContainer />
+      </ReduxContainer>
+
 );
