@@ -8,10 +8,19 @@ import {
   SafeAreaView,
   KeyboardAvoidingView,
   Platform,
+  ColorSchemeName,
+  ViewStyle,
+  StyleProp
 } from 'react-native';
 import { useSelector } from 'react-redux';
 import styles from './styles';
 
+
+interface Props {
+  style?: StyleProp<ViewStyle>;
+  scrollEnabled?: boolean;
+  statusBarBG?: ColorSchemeName;
+}
 
 export const PageView = ({ style, scrollEnabled, children }) => {
   const isDark = useSelector(selectIsDark);
