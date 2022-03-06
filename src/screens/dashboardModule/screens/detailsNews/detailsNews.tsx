@@ -20,25 +20,26 @@ export const DetailsNewsScreen = ({ route }) => {
                     size={scaleFontSize(22)}
                     style={styles.title}
                     weight={'bold'}
-                    color={COLORS.darkGray}>
+                    >
                     {Details?.title}
                 </CustomText>
                 <Row justifyContent="space-between">
-                    <CustomText size={scaleFontSize(12)} color={COLORS.black}>
+                    <CustomText size={scaleFontSize(14)}
+                     >
                         {Details?.author}
                     </CustomText>
 
-                    <CustomText size={scaleFontSize(12)} color={COLORS.black}>
+                    <CustomText size={scaleFontSize(14)}
+                    >
                         {formatDate(Details?.publishedAt)}
                     </CustomText>
                 </Row>
                 <View style={styles.descCont}>
-                    <CustomText size={scaleFontSize(12)} color={COLORS.darkGray}>
+                    <CustomText size={scaleFontSize(16)} >
                         description
                     </CustomText>
                     <CustomText
                         size={scaleFontSize(12)}
-                        color={COLORS.black}
                         marginTop={scaleHeight(5)}
                         style={styles.description}>
                         {Details?.description}
@@ -46,12 +47,11 @@ export const DetailsNewsScreen = ({ route }) => {
                 </View>
 
                 <View style={styles.descCont}>
-                    <CustomText size={scaleFontSize(12)} color={COLORS.darkGray}>
+                    <CustomText size={scaleFontSize(16)} >
                         content
                     </CustomText>
                     <CustomText
                         size={scaleFontSize(12)}
-                        color={COLORS.black}
                         marginTop={scaleHeight(5)}
                         style={styles.description}>
                         {Details?.content}

@@ -2,7 +2,7 @@ import {FONT_FAMILIES}from '../fonts/Fonts'
 export const COLORS = {
   primary: '#572451',
   secondary: '#82518a',
-  white: '#F2F3F7',
+  white: '#FFF',
   black: '#000000',
    error: '#F95A5A',
   gray: '#A1A4B2',

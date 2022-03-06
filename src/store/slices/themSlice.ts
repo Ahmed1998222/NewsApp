@@ -1,11 +1,13 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { Appearance, ColorSchemeName } from 'react-native';
 import { RootState } from '../index';
+import AsyncStorage from '@react-native-community/async-storage';
 
 type ThemeState = {
   isDark: boolean;
   theme: ColorSchemeName;
 };
+
 const slice = createSlice({
   name: 'theme',
   initialState: {
@@ -16,8 +18,9 @@ const slice = createSlice({
     setTheme: (state, { payload: theme }: PayloadAction<ColorSchemeName>) => {
       state.isDark = theme === 'dark';
       state.theme = theme;
+      AsyncStorage.setItem('themeApp', theme)
     },
-  },
+  },  
 });
 
 export const { setTheme } = slice.actions;
