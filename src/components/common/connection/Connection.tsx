@@ -4,8 +4,8 @@ import { scaleHeight, scaleWidth } from '../../../utils/scaling';
 import { strings } from '../../../localization';
 import * as React from 'react';
 import { StyleSheet, Modal, View, Image } from 'react-native';
-import { CustomText } from '../CustomText/CustomText';
-import CustomButton from '../../../components/Form/Button/Button';
+import { CustomText } from '..';
+import CustomButton from '../../form/Button/Button';
 import { useEffect, useState } from 'react';
 import { PageView } from '..';
 
@@ -36,14 +36,14 @@ export const Connection = () => {
             resizeMode="contain"
           />
           <CustomText weight="bold" marginTop={32}>
-            {strings('noConnection')}
+            {strings('connection.noConnection')}
           </CustomText>
-          <CustomText marginTop={32}>{strings('checkInternet')}</CustomText>
+          <CustomText marginTop={32}>{strings('connection.checkInternet')}</CustomText>
         </View>
         <CustomButton
           type="primary"
-          title={strings('refresh')}
-          style={styles.refreshBtn}
+          title={strings('connection.refresh')}
+          style={styles.refreshBtn} 
           onPress={onRefresh}
         />
       </PageView>

@@ -13,6 +13,11 @@ const en = {
   news: 'News',
   search: 'Search',
   settings: 'Settings',
+  connection: {
+    checkInternet: 'Check internet ',
+    refresh: 'Refresh',
+    noConnection: 'no internet',
+  },
 };
 
 export default en;
