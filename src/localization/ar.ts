@@ -13,6 +13,11 @@ const ar = {
   news: 'الاخبار',
   search: 'ابحث',
   settings: 'الاعدادات',
+  connection: {
+    checkInternet: 'افحص اتصال الانترنت ',
+    refresh: 'حاول مرة اخرى',
+    noConnection: 'لا يوجد اتصال بالانترنت',
+  },
 };
 
 export default ar;

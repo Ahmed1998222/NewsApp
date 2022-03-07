@@ -1,6 +1,6 @@
-import theme from '../../../assets/theme/theme';
-import { selectIsDark } from '../../../store/slices/themSlice';
-import { SCREEN_WIDTH } from '../../../utils/scaling';
+import theme from '@assets/theme/theme';
+import { selectIsDark } from '@store/slices/themSlice';
+import { SCREEN_WIDTH } from '@utils/scaling';
 import React from 'react';
 import SkeletonPlaceholder from 'react-native-skeleton-placeholder';
 import { useSelector } from 'react-redux';

@@ -1,4 +1,4 @@
-import { scaleHeight, scaleWidth } from '../../../../utils/scaling';
+import { scaleHeight, scaleWidth } from '@utils/scaling';
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({

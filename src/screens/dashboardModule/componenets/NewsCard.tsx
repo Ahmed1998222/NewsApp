@@ -1,11 +1,11 @@
 import React from 'react';
 import { Image, StyleSheet, TouchableOpacity, View } from 'react-native';
-import theme from '../../../assets/theme/theme';
-import { CustomText } from '../../../components/common';
-import { selectIsDark } from '../../../store/slices/themSlice';
+import theme from '@assets/theme/theme';
+import { CustomText } from '@components/common';
+import { selectIsDark } from '@store/slices/themSlice';
 import { useSelector } from 'react-redux';
-import { scaleHeight, scaleWidth } from '../../../utils/scaling';
-import { INews } from '../../../types';
+import { scaleHeight, scaleWidth } from '@utils/scaling';
+import { INews } from 'types';
 import { EDashboardModuleRoutes } from '../navigation';
 
 const NewsCard = ({ item, navigate }: INewsCard) => {

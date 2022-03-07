@@ -1,6 +1,6 @@
-import theme from '../../../assets/theme/theme';
-import { selectIsDark } from '../../../store/slices/themSlice';
-import { scaleFontSize } from '../../../utils/scaling';
+import theme from '@assets/theme/theme';
+import { selectIsDark } from '@store/slices/themSlice';
+import { scaleFontSize } from '@utils/scaling';
 import * as React from 'react';
 import { Text, StyleSheet, TextProps } from 'react-native';
 import { useSelector } from 'react-redux';

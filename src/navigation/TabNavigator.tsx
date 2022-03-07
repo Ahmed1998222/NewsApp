@@ -6,8 +6,8 @@ import { ConfigStackScreens } from '../screens/configModule';
 import { EDashboardModuleRoutes } from '../screens/dashboardModule/navigation/';
 import { EConfigModuleRoutes } from '../screens/configModule/navigation';
 import { useSelector } from 'react-redux';
-import theme from '../assets/theme/theme';
-import { selectIsDark } from '../store/slices/themSlice';
+import theme from '@assets/theme/theme';
+import { selectIsDark } from '@store/slices/themSlice';
 
 const Tab = createBottomTabNavigator();
 const ICON_SIZE = 25;

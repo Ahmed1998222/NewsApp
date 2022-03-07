@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { PageView, CustomText } from '../../../../components/common';
+import { PageView, CustomText } from '@components/common';
 import style from './style';
 import {
   FlatList,
@@ -7,15 +7,15 @@ import {
   View,
 } from 'react-native';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
-import theme from '../../../../assets/theme/theme';
+import theme from '@assets/theme/theme';
 import throttle from 'lodash.throttle';
-import { stringifyError, useGetNewsMutation } from '../../../../services/newsService';
+import { stringifyError, useGetNewsMutation } from '@services/newsService';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { DashboardModuleRoutes, EDashboardModuleRoutes } from '../../navigation';
 import NewsCard from '../../componenets/NewsCard'
 import EmptySearch from '../../componenets/EmptySearch';
-import { strings } from '../../../../localization';
+import { strings } from '@localization';
 type ScreenProp = StackNavigationProp<DashboardModuleRoutes, EDashboardModuleRoutes.Home>;
 export const HomeScreen = () => {
 
@@ -66,7 +66,7 @@ export const HomeScreen = () => {
         />
         {query ? (
           <EvilIcons
-            name="close-circle"
+            name="close-o"
             color={theme.colors.darkGray}
             size={20}
             onPress={() => onChangeText('')}

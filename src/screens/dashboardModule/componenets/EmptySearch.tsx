@@ -1,8 +1,8 @@
 import React from 'react';
 import { Image, StyleSheet, View } from 'react-native';
-import theme from '../../../assets/theme/theme';
-import { CustomText, Skelton } from '../../../components/common';
-import { scaleHeight, scaleWidth } from '../../../utils/scaling';
+import theme from '@assets/theme/theme';
+import { CustomText, Skelton } from '@components/common';
+import { scaleHeight, scaleWidth } from '@utils/scaling';
 
 
 const EmptySearch = ({ isUninitialized, isLoading }) => {
