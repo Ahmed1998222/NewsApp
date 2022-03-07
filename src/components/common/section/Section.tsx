@@ -1,9 +1,9 @@
-import { selectIsDark } from '../../../store/slices/themSlice';
+import { selectIsDark } from '@store/slices/themSlice';
 import React from 'react';
 import { View , StyleSheet} from 'react-native';
 import { useSelector } from 'react-redux';
  import { CustomText } from '..';
-import theme from '../../../assets/theme/theme';
+import theme from '@assets/theme/theme';
 
 export const Section = ({
   title,

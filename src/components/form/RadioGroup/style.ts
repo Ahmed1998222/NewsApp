@@ -1,5 +1,5 @@
-import theme from '../../../assets/theme/theme';
-import { scaleHeight } from '../../../utils/scaling';
+import theme from '@assets/theme/theme';
+import { scaleHeight } from '@utils/scaling';
 import { StyleSheet } from 'react-native';
 
 const { lightGray, lightBlue, background } = theme.colors;

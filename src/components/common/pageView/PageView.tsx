@@ -1,4 +1,4 @@
-import theme from '../../../assets/theme/theme';
+import theme from '@assets/theme/theme';
 import { selectIsDark } from '../../../store/slices/themSlice';
 import React, { FC } from 'react';
 import {

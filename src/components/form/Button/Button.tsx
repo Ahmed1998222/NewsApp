@@ -8,9 +8,9 @@ import {
   TextStyle,
   TouchableOpacity,
 } from 'react-native';
-import theme from '../../../assets/theme/theme';
-import { scaleHeight, scaleWidth } from '../../../utils/scaling';
-import { CustomText } from '../../../components/common';
+import theme from '@assets/theme/theme';
+import { scaleHeight, scaleWidth } from '@utils/scaling';
+import { CustomText } from '@components/common';
 
 export interface ButtonProps extends TextProps {
   title?: string;

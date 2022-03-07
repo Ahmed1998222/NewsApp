@@ -1,7 +1,7 @@
-import {sharedImages} from '../../../assets/images';
+import {sharedImages} from '@assets/images';
 import NetInfo from '@react-native-community/netinfo';
-import { scaleHeight, scaleWidth } from '../../../utils/scaling';
-import { strings } from '../../../localization';
+import { scaleHeight, scaleWidth } from '@utils/scaling';
+import { strings } from '@localization';
 import * as React from 'react';
 import { StyleSheet, Modal, View, Image } from 'react-native';
 import { CustomText } from '..';

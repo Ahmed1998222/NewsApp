@@ -2,10 +2,10 @@
 import React from 'react';
 import { Image, View } from 'react-native';
 import styles from './style';
-import { PageView, CustomText } from '../../../../components/common';
-import { COLORS } from '../../../../assets/theme/theme';
-import Row from '../../../../components/common/row';
-import { formatDate, scaleFontSize, scaleHeight } from '../../../../utils/scaling';
+import { PageView, CustomText } from '@components/common';
+import { COLORS } from '@assets/theme/theme';
+import Row from '@components/common/row';
+import { formatDate, scaleFontSize, scaleHeight } from '@utils/scaling';
 
 export const DetailsNewsScreen = ({ route }) => {
     const Details = route.params?.new
