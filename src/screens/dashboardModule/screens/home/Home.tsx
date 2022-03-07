@@ -66,7 +66,7 @@ export const HomeScreen = () => {
         />
         {query ? (
           <EvilIcons
-            name="close-circle"
+            name="close-o"
             color={theme.colors.darkGray}
             size={20}
             onPress={() => onChangeText('')}
