@@ -19,7 +19,8 @@ const en = {
     noConnection: 'no internet',
   },
   empty_Search:'empty_Search',
-  seek:'seek for another news'
+  seek:'seek for another news',
+  shareApp:'Share App'
 
 };
 

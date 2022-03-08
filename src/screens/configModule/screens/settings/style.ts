@@ -10,4 +10,5 @@ export default StyleSheet.create({
     flex: 1,
     borderWidth: 1,
   },
+  marginEnd:{marginEnd:scaleWidth(10)   }
 });
