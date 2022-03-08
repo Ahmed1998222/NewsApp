@@ -20,6 +20,7 @@ const ar = {
   },
   empty_Search: 'لا يوجد نتائج',
   seek: 'ابحث عن خبر اخر ',
+  shareApp:'مشاركة البرنامج'
 };
 
 export default ar;

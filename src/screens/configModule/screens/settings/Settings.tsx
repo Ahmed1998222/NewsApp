@@ -1,26 +1,31 @@
- 
+
 import React from 'react';
-import {  PageView, Section } from '../../../../components/common';
+import { CustomText, PageView, Section } from '@components/common';
 import styles from './style';
-import { LANGUAGES_OPTIONS, THEMES_OPTIONS } from '../../../../utils/constants';
+import { LANGUAGES_OPTIONS, THEMES_OPTIONS } from '@utils/constants';
 import {
   changeLanguage,
   getCurrentLanguage,
   strings,
-} from '../../../../localization';
+} from '@localization';
 import { IOption } from '../../../../types/index';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectTheme, setTheme } from '../../../../store/slices/themSlice';
-import RadioGroup from '../../../../components/form/RadioGroup/RadioGroup'
-import { StackNavigationProp } from '@react-navigation/stack';
-import { ConfigModuleRoutes, EConfigModuleRoutes } from '../../navigation';
-
+import { selectIsDark, selectTheme, setTheme } from '@store/slices/themSlice';
+import RadioGroup from '@components/form/RadioGroup/RadioGroup'
+import AntDesign from 'react-native-vector-icons/AntDesign';
+import { Text } from 'react-native'
+import Row from '@components/common/row';
+import CurrentColor from '@assets/theme/theme';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import { shareApp } from '../../helper/helper';
 // type ScreenProp = StackNavigationProp<ConfigModuleRoutes, EConfigModuleRoutes.Settings>;
 
-export  const SettingsScreen = () => {
-    const theme = useSelector(selectTheme);
+export const SettingsScreen = () => {
+  const theme = useSelector(selectTheme);
   const dispatch = useDispatch();
-   return (
+  const isDark = useSelector(selectIsDark);
+
+  return (
     <PageView style={styles.layout}>
       <Section title={strings('languages.title')}>
         <RadioGroup
@@ -28,7 +33,7 @@ export  const SettingsScreen = () => {
             value => value.value === getCurrentLanguage(),
           )}
           data={LANGUAGES_OPTIONS}
-          onSelect={(item: IOption) => { 
+          onSelect={(item: IOption) => {
             changeLanguage(item.value);
           }}
         />
@@ -43,8 +48,20 @@ export  const SettingsScreen = () => {
           }}
         />
       </Section>
+      <Section >
+        <TouchableOpacity onPress={shareApp}>
+          <Row>
+            <AntDesign name="sharealt"
+              color={isDark ? CurrentColor.colors.white : CurrentColor.colors.black}
+              size={25}
+              style={styles.marginEnd}
+            />
+            <CustomText>{strings('shareApp')}</CustomText>
+
+          </Row>
+        </TouchableOpacity>
+      </Section>
     </PageView>
   );
 };
 
- 
