@@ -18,6 +18,9 @@ const en = {
     refresh: 'Refresh',
     noConnection: 'no internet',
   },
+  empty_Search:'empty_Search',
+  seek:'seek for another news'
+
 };
 
 export default en;

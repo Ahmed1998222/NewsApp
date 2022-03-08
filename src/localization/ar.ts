@@ -18,6 +18,8 @@ const ar = {
     refresh: 'حاول مرة اخرى',
     noConnection: 'لا يوجد اتصال بالانترنت',
   },
+  empty_Search: 'لا يوجد نتائج',
+  seek: 'ابحث عن خبر اخر ',
 };
 
 export default ar;
