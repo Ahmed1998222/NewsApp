@@ -1,17 +1,17 @@
 
 import React from 'react';
-import { CustomText, PageView, Section } from '../../../../components/common';
+import { CustomText, PageView, Section } from '@components/common';
 import styles from './style';
-import { LANGUAGES_OPTIONS, THEMES_OPTIONS } from '../../../../utils/constants';
+import { LANGUAGES_OPTIONS, THEMES_OPTIONS } from '@utils/constants';
 import {
   changeLanguage,
   getCurrentLanguage,
   strings,
-} from '../../../../localization';
+} from '@localization';
 import { IOption } from '../../../../types/index';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectIsDark, selectTheme, setTheme } from '../../../../store/slices/themSlice';
-import RadioGroup from '../../../../components/form/RadioGroup/RadioGroup'
+import { selectIsDark, selectTheme, setTheme } from '@store/slices/themSlice';
+import RadioGroup from '@components/form/RadioGroup/RadioGroup'
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import { Text } from 'react-native'
 import Row from '@components/common/row';

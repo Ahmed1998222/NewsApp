@@ -13,7 +13,7 @@ export default StyleSheet.create({
   },
   safeAreaView: {
     flex: 1,
-    paddingTop: 5,
+    paddingTop: scaleHeight(30),
   },
   flexGrowOne: {
     flexGrow: 1,

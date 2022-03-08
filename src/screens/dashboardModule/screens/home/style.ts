@@ -13,7 +13,7 @@ export default StyleSheet.create({
     backgroundColor: COLORS.white,
     paddingHorizontal: scaleWidth(5),
     borderRadius: 10,
-    marginTop: scaleHeight(100),
+    marginTop: scaleHeight(55),
     marginBottom: scaleHeight(20),
   },
   searchInput: {
