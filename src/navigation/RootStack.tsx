@@ -12,10 +12,8 @@ export const RootStackScreen = ({ userToken }: IRootStack) => {
   useEffect(() => {
 
 
-    setTimeout(() => {
-
-      setIsSplashOn(false)
-    }, 5000)
+    const time = setTimeout(() => { setIsSplashOn(false) }, 3500)
+    return () => clearTimeout(time)
   }, [])
   return <>{isSplashOn ? <SplashNavigator /> : <TabNavigator />}</>;
 };
