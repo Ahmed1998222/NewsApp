@@ -3,9 +3,10 @@ import { Image, StyleSheet, View } from 'react-native';
 import theme from '@assets/theme/theme';
 import { CustomText, Skelton } from '@components/common';
 import { scaleHeight, scaleWidth } from '@utils/scaling';
+import { strings } from '@localization';
 
 
-const EmptySearch = ({ isUninitialized, isLoading }) => {
+const EmptySearch = ({ isUninitialized, isLoading }:IEmptySearch) => {
   return !isUninitialized ? (
     isLoading ? (
       <Skelton />
@@ -19,10 +20,10 @@ const EmptySearch = ({ isUninitialized, isLoading }) => {
           resizeMode="contain"
         />
         <CustomText size={16} weight="semiBold" color={theme.colors.error}>
-          empty Search
+          {strings('empty_Search')}
         </CustomText>
         <CustomText marginTop={5} size={14} color={theme.colors.darkGray}>
-          seek for another news
+          {strings('seek')}
         </CustomText>
       </View>
     )
@@ -49,7 +50,7 @@ const Styles = StyleSheet.create({
   },
 });
 
-interface INewsCard {
+interface IEmptySearch {
   isUninitialized: boolean;
   isLoading: boolean
 }
