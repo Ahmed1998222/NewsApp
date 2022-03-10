@@ -22,6 +22,11 @@ or
 ```bash
 $  yarn android
 ```
+## Demo
+
+
+https://user-images.githubusercontent.com/38440624/157703692-25208fb7-0d60-4a08-9d83-775e2574eca0.mp4
+
 
 ## What's included
 
