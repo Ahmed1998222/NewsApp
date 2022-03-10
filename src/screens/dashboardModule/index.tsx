@@ -14,12 +14,7 @@ export const DashboardStackScreens = () => (
     }}
   >
     <DashboardStack.Screen name={EDashboardModuleRoutes.Home} component={HomeScreen} />
-
-
     <DashboardStack.Screen name={EDashboardModuleRoutes.DetailsNews} component={DetailsNewsScreen} />
-
-
-
   </DashboardStack.Navigator>
 );
 

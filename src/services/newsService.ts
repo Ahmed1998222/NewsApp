@@ -23,5 +23,8 @@ export const newsService = createApi({
   }),
 });
 
-export const stringifyError = (error: any) => error.data.message;
+export const stringifyError =  (error: any) =>{ 
+  console.log('test ---- > ' , error)
+  console.log('test ---- > ' , error.data)
+  error.data.message};
 export const { useGetNewsMutation } = newsService;
