@@ -18,8 +18,6 @@ import Row from '@components/common/row';
 import CurrentColor from '@assets/theme/theme';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { shareApp } from '../../helper/helper';
-// type ScreenProp = StackNavigationProp<ConfigModuleRoutes, EConfigModuleRoutes.Settings>;
-
 export const SettingsScreen = () => {
   const theme = useSelector(selectTheme);
   const dispatch = useDispatch();

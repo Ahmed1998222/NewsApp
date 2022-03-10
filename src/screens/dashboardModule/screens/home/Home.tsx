@@ -16,7 +16,7 @@ import { DashboardModuleRoutes, EDashboardModuleRoutes } from '../../navigation'
 import NewsCard from '../../componenets/NewsCard'
 import EmptySearch from '../../componenets/EmptySearch';
 import { strings } from '@localization';
-type ScreenProp = StackNavigationProp<DashboardModuleRoutes, EDashboardModuleRoutes.Home>;
+type ScreenProp = StackNavigationProp<DashboardModuleRoutes, EDashboardModuleRoutes.DetailsNews>;
 export const HomeScreen = () => {
 
   const { navigate } = useNavigation<ScreenProp>();
@@ -76,6 +76,7 @@ export const HomeScreen = () => {
       <FlatList
         refreshing={isRefreshing}
         onRefresh={() => {
+          setQuery('')
           setIsRefreshing(true);
           getNews('').then(() => {
             setIsRefreshing(false);
