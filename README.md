@@ -9,9 +9,18 @@ Just make sure that you install npm after download project like so :
 ```bash
 $ npm i
 ```
+or 
+```bash
+$ yarn
+```
+then 
 
 ```bash
 $  npx react-native run-android
+```
+or 
+```bash
+$  yarn android
 ```
 
 ## What's included
